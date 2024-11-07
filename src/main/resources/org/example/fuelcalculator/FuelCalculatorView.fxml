@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox spacing="10" alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fuelcalculator.MainController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label fx:id="distanceLabel" text="%distance.label" />
+    <TextField fx:id="distanceField" />
+
+    <Label fx:id="fuelLabel" text="%fuel.label" />
+    <TextField fx:id="fuelField" />
+
+    <Button fx:id="calculateButton" text="%calculate.button" onAction="#calculateConsumption" />
+
+    <Label fx:id="resultLabel" text="" />
+
+    <HBox spacing="5">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+        <Button text="EN" onAction="#switchToEnglish" />
+        <Button text="FR" onAction="#switchToFrench" />
+        <Button text="JP" onAction="#switchToJapanese" />
+        <Button text="IR" onAction="#switchToPersian" />
+    </HBox>
+</VBox>
